@@ -3,44 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Asfaltik - Asfalt Saha Hesaplama Uygulaması</title>
-<meta name="description" content="Asfaltik: Şantiye ve yol ekipleri için GPS, tonaj, sıcaklık, silindiraj ve raporlama uygulaması.">
+<title>Asfaltik - GPS, Kamyon Takibi, AI Destekli Asfalt ve Şantiye Yönetim Uygulaması</title>
+<meta name="description" content="Asfaltik: Şantiye şefleri, saha mühendisleri ve asfalt ekipleri için GPS konum takibi, asfalt sıcaklık ve silindir takibi, kamyon ve araç takibi, km ve eğim hesaplama, hava durumu, yapay zeka destekli analiz, PDF raporlama ve proje ekip yönetimi. Bulut senkronlu.">
+<meta name="keywords" content="asfaltik, asfalt uygulaması, gps konum takibi, kamyon takibi, silindir takibi, asfalt sıcaklık takibi, eğim hesaplama, şantiye yönetimi, ai asfalt, saha mühendisi uygulaması, yol yapım">
+<meta name="author" content="Yusuf Taskiran">
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://yusuftaskiran753-dot.github.io/">
+
+<meta property="og:title" content="Asfaltik - Şantiye Yönetim ve Asfalt Hesaplama Uygulaması">
+<meta property="og:description" content="GPS takibi, kamyon ve silindir takibi, sıcaklık takibi, AI destekli analiz, PDF rapor ve ekip yönetimi tek uygulamada.">
+<meta property="og:url" content="https://yusuftaskiran753-dot.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Asfaltik",
+  "operatingSystem": "iOS, Android",
+  "applicationCategory": "BusinessApplication",
+  "inLanguage": "tr-TR",
+  "description": "Şantiye şefleri, saha mühendisleri ve yol yapım ekipleri için GPS konum takibi, asfalt sıcaklık takibi, silindir takibi, kamyon ve araç takibi, kilometre ve eğim hesaplamaları, hava durumu, yapay zeka destekli araçlar, PDF raporlama ve proje ekip yönetimi yapan bulut senkronlu saha uygulaması",
+  "author": {"@type": "Person", "name": "Yusuf Taskiran"},
+  "featureList": ["GPS ve Konum Takibi", "Asfalt Sıcaklık Takibi", "Silindir Takibi", "Kamyon ve Araç Takibi", "Kilometre ve Eğim Hesaplamaları", "Hava Durumu", "Yapay Zeka Destekli Araçlar", "Raporlama PDF", "Proje ve Ekip Yönetimi", "Bulut Senkronizasyon"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Asfaltik nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Asfaltik, şantiye şefleri, saha mühendisleri, asfalt ekipleri ve yol yapım firmaları için geliştirilmiş GPS konum takibi, sıcaklık takibi, silindir takibi, kamyon takibi, eğim hesaplama, hava durumu, yapay zeka destekli analiz ve PDF raporlama özelliklerine sahip profesyonel şantiye yönetim uygulamasıdır."}},
+    {"@type": "Question", "name": "Asfaltik hangi özellikleri sunar?", "acceptedAnswer": {"@type": "Answer", "text": "GPS ve Konum Takibi, Asfalt Sıcaklık Takibi, Silindir Takibi, Kamyon ve Araç Takibi, Kilometre ve Eğim Hesaplamaları, Hava Durumu takibi, Yapay Zeka Destekli Araçlar, PDF Raporlama ve Proje Ekip Yönetimi ile bulut senkronizasyonu."}},
+    {"@type": "Question", "name": "Kimler için tasarlandı?", "acceptedAnswer": {"@type": "Answer", "text": "Şantiye şefleri, saha mühendisleri, asfalt ekipleri, yol yapım firmaları, teknik personeller ve altyapı çalışmalarında görev alan profesyoneller için."}}
+  ]
+}
+</script>
 <style>
-body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;max-width:720px;margin:0 auto;padding:22px;line-height:1.7}
-h1{font-size:32px;font-weight:900;margin-bottom:6px}
-.sub{color:#555;margin-top:0}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
-.card{border:1px solid #e6e6e6;border-radius:14px;padding:14px}
-.card b{display:block}
-.btn{display:inline-block;background:#000;color:#fff;padding:14px 22px;border-radius:12px;text-decoration:none;font-weight:700;margin:10px 8px 0 0}
+body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;max-width:860px;margin:auto;padding:24px;line-height:1.8;color:#111}
+h1{font-size:44px;font-weight:900;margin:0;letter-spacing:-1px} .sub{color:#555;font-size:18px;margin-top:8px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.card{border:1px solid #e5e7eb;padding:16px;border-radius:16px;background:#fafafa}
+.card.ai{background:#eef2ff;border:1.5px solid #6366f1} .card.live{background:#f0fdf4;border:1.5px solid #22c55e}
+.btn{background:#111;color:#fff;padding:18px 32px;border-radius:14px;text-decoration:none;display:inline-block;font-weight:800;margin-top:20px}
+h2{margin-top:36px} footer{margin-top:40px;border-top:1px solid #eee;padding-top:16px;color:#777;font-size:13px}
 </style>
 </head>
 <body>
 <h1>Asfaltik</h1>
-<p class="sub">Yol ve şantiye ekipleri için profesyonel saha uygulaması.</p>
-
-<a class="btn" href="#">App Store</a>
-<a class="btn" style="background:#fff;color:#000;border:1px solid #000" href="#">Google Play</a>
+<p class="sub">Şantiye şefleri, saha mühendisleri ve asfalt ekipleri için profesyonel saha yönetim uygulaması.</p>
 
 <div class="grid">
-<div class="card"><b>📍 GPS</b>Konum ve saha takibi</div>
-<div class="card"><b>🗺️ Topo</b>Arazi ölçüm</div>
-<div class="card"><b>🌡️ Sıcaklık</b>Asfalt sıcaklığı takibi</div>
-<div class="card"><b>🚜 Silindiraj</b>Silindir geçiş takibi</div>
-<div class="card"><b>🚚 Kamyon</b>Sevkiyat ve kamyon hesabı</div>
-<div class="card"><b>📏 Km & Eğim</b>Mesafe ve eğim hesabı</div>
-<div class="card"><b>🧮 Hesap Aracı</b>Tonaj ve maliyet</div>
-<div class="card"><b>🤖 AI</b>Akıllı asistan</div>
-<div class="card"><b>☁️ Hava Durumu</b>Saha hava durumu</div>
-<div class="card"><b>📊 Rapor</b>Günlük raporlama</div>
-<div class="card"><b>☁️ Bulut & Ekip</b>Ekip ile senkron</div>
-<div class="card"><b>📅 Bugün</b>Günlük özet</div>
+<div class="card"><b>📍 GPS ve Konum Takibi</b><br>GPS üzerinden saha ölçümlerinizi gerçekleştirin, konum bilgilerinizi görüntüleyin.</div>
+<div class="card"><b>🌡️ Asfalt Sıcaklık Takibi</b><br>Asfalt sıcaklık ölçümlerinizi kaydedin ve geçmiş verilerinizi düzenli takip edin.</div>
+<div class="card"><b>🚜 Silindir Takibi</b><br>Sıkıştırma çalışmalarına ilişkin saha kayıtlarını organize edin.</div>
+<div class="card live"><b>🚚 Kamyon ve Araç Takibi</b><br>Asfalt taşıma operasyonlarınıza ilişkin kamyon ve sevkiyat bilgilerini yönetin.</div>
+<div class="card"><b>📐 Kilometre ve Eğim Hesaplamaları</b><br>Saha çalışmalarında ihtiyaç duyduğunuz tüm ölçüm ve hesaplama araçlarına hızla erişin.</div>
+<div class="card"><b>⛅ Hava Durumu</b><br>Çalışma bölgenizdeki hava koşullarını takip ederek saha planlamanızı destekleyin.</div>
+<div class="card ai"><b>🤖 Yapay Zeka Destekli Araçlar</b><br>Desteklenen yapay zeka özellikleriyle saha verilerinizi değerlendirin. Akıllı analiz.</div>
+<div class="card"><b>📄 Raporlama + 👥 Proje ve Ekip Yönetimi</b><br>Saha kayıtlarınızı düzenleyin, PDF rapor oluşturun. Bulut senkronla ekip çalışmalarınızı kolaylaştırın.</div>
 </div>
 
-<div class="card" style="margin-top:20px">
-<p><a href="privacy.html"><b>Gizlilik Politikası</b></a> | yusuftaskiran753@gmail.com</p>
-</div>
+<h2>Kimler İçin?</h2>
+<p>Asfaltik; <b>şantiye şefleri, saha mühendisleri, asfalt ekipleri, yol yapım firmaları, teknik personeller ve altyapı çalışmalarında görev alan profesyoneller</b> için tasarlanmıştır. Saha çalışmalarınızı dijital ortama taşıyın ve operasyonlarınızı daha düzenli yönetin.</p>
 
+<a class="btn" href="https://apps.apple.com/tr/app/asfaltik/id6821031911">App Store'dan İndir</a>
+<p style="color:#888">Geliştirici: Yusuf Taskiran | Akhisar/Manisa</p>
+
+<footer>
+<a href="privacy.html"><b>Gizlilik Politikası</b></a> | yusuftaskiran753@gmail.com | © 2026 Asfaltik<br>
+Anahtar: asfaltik, gps konum takibi, silindir takibi, kamyon takibi, asfalt sıcaklık takibi, eğim hesaplama, şantiye yönetimi
+</footer>
 </body>
 </html>

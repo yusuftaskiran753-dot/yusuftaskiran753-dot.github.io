@@ -4,28 +4,88 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Asfaltik - Gizlilik Politikası</title>
+<meta name="description" content="Asfaltik saha yönetim uygulamasının gizlilik politikası: hangi verilerin cihazda kaldığı, hangilerinin hangi özellikte sunucuya gönderildiği ve verilerinizi nasıl sildirebileceğiniz.">
+<link rel="canonical" href="https://yusuftaskiran753-dot.github.io/privacy.html">
 <style>
-body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;max-width:720px;margin:0 auto;padding:24px;line-height:1.7;color:#111}
-h1{font-size:28px;font-weight:900}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:720px;margin:0 auto;padding:24px 16px;line-height:1.7;color:#111;background:#fff}
+h1{font-size:28px;font-weight:900;margin-bottom:4px}
 h2{font-size:18px;margin-top:28px}
 .card{border:1px solid #e5e5e5;border-radius:16px;padding:18px;margin-top:16px;background:#fafafa}
 a{color:#111}
 .small{color:#666;font-size:13px}
+hr{border:0;border-top:1px solid #eee;margin:40px 0}
+@media (prefers-color-scheme:dark){body{background:#111;color:#eee}.card{background:#1b1b1b;border-color:#333}a{color:#eee}.small{color:#aaa}hr{border-color:#333}}
 </style>
 </head>
 <body>
-<h1>Gizlilik Politikası - Asfaltik</h1>
-<p class="small">Son güncelleme: 18 Ekim 2026 | Uygulama: Asfaltik</p>
+<h1>Gizlilik Politikası – Asfaltik</h1>
+<p class="small">Son güncelleme: 18.10.2026 · Geliştirici: Yusuf Taşkıran · İletişim: <a href="mailto:yusuftaskiran753@gmail.com">yusuftaskiran753@gmail.com</a></p>
 
 <div class="card">
-<p><b>Asfaltik hiçbir kişisel veri toplamaz, satmaz ve üçüncü taraflarla paylaşmaz.</b> Tüm hesaplamalar cihazınızda offline yapılır.</p>
+<p><b>Özet:</b> Asfaltik hesap açtırmaz; reklam ve izleme (tracking) aracı içermez. Girdiğiniz kayıtlar cihazınızda saklanır. Veriler yalnızca aşağıda yazan özellikleri <b>siz kullandığınızda</b> cihazdan çıkar: hava durumu, yapay zekâ asistanı, anlık bildirimler, Bulut Yedek &amp; Ekip ve abonelik doğrulama.</p>
 </div>
 
-<h2>1. Toplanan Veriler</h2>
-<p>Asfaltik sizden isim, e-posta, telefon gibi kişisel veriler <b>toplamaz</b>. Hesap oluşturma yoktur.</p>
+<h2>1. Cihazda saklanan veriler</h2>
+<p>Metraj/tonaj hesapları, GPS mesafeleri ve noktaları, topoğrafya kayıtları, kamyon/sefer ve plaka rehberi, km/yakıt, sıcaklık ve silindiraj kayıtları, notlar, firma adı ve logo, tema ve dil tercihi uygulamanın yerel deposunda tutulur.</p>
 
-<h2>2. Konum (GPS) İzni</h2>
-<p>GPS, Topo ve Km özellikleri sadece saha ölçümü için cihazınızın konumunu kullanır. Konum veriniz sunucularımıza gönderilmez, sadece sizin cihazınızda kalır.</p>
+<h2>2. Konum</h2>
+<ul>
+<li>GPS ölçümü, nokta kaydı, topoğrafya ve hava durumu için kullanılır.</li>
+<li>Başlattığınız GPS ölçümü ekran kapalıyken de bildirimle birlikte sürer; ölçümü durdurduğunuzda konum kullanımı biter.</li>
+<li>Hava durumu için koordinatlarınız veya aradığınız yer adı <b>Open-Meteo</b> servisine gönderilir (<a href="https://open-meteo.com/en/terms">open-meteo.com/en/terms</a>).</li>
+<li>Hava durumunun hangi ülkeyi baz alacağını bulmak için, konum izni verdiyseniz son bilinen konumunuz telefonun kendi adres çözümleyicisine (Android'de Google, iOS'ta Apple) gönderilir; cihazda yalnızca ülke kodu saklanır.</li>
+<li>Anlık bildirimler açıksa, hava uyarısı için son kullandığınız konum bildirim sunucusunda saklanır (bkz. 5. madde).</li>
+</ul>
 
-<h2>3. Hesaplamalar</h2>
-<p>Tonaj, sıcaklık, silindiraj, kamyon, eğim gibi tüm hesaplamalar internet olmadan cihaz içinde
+<h2>3. Kamera, fotoğraflar ve mikrofon</h2>
+<p>Fotoğraf yalnızca "Saha Fotoğrafı" özelliğini kullandığınızda okunur ve analiz için yapay zekâ sunucusuna gönderilir. "Sesli Giriş" kullandığınızda konuşmanız cihazınızın konuşma tanıma servisiyle (Android'de Google, iOS'ta Apple) yazıya çevrilir; ses kaydı uygulama tarafından saklanmaz.</p>
+
+<h2>4. Yapay zekâ (AI) asistanı</h2>
+<ul>
+<li>AI'ya soru sorduğunuzda, "Bugünü Analiz Et" veya fotoğraf analizini kullandığınızda sorunuz, fotoğrafınız (varsa) ve her kayıt türünden en yeni kayıtların özeti geliştiricinin sunucusuna, oradan yanıt üretmesi için yapay zekâ sağlayıcısına (<b>Google Gemini</b>, <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>) gönderilir.</li>
+<li><b>Gönderilmeyenler:</b> plakalar, GPS noktaları ve rotaları (koordinatlar), topoğrafya koordinatları ve kaydı yapan kişinin adı.</li>
+<li>Günlük kullanım hakkını saymak için rastgele kurulum kimliği ve IP adresi o gün için sunucu belleğinde tutulur. Sunucu sorularınızı kalıcı olarak saklamaz.</li>
+</ul>
+
+<h2>5. Anlık bildirimler</h2>
+<p>Bildirimler açıkken, bildirim gönderebilmek için sunucuda şunlar saklanır: cihazın bildirim adresi (Firebase Cloud Messaging belirteci), rastgele kurulum kimliği, dil, bildirim tercihleri ve saati, saat dilimi, "Adınız" alanı, ekip kodunun özeti (kodun kendisi değil), hava uyarısı için son kullandığınız konum (enlem/boylam) ve gün sonu bildirimi için o günün özet sayıları (sefer, ton, GPS metresi). Bildirimler Google Firebase Cloud Messaging ile iletilir (<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>). Bildirimleri Ayarlar'dan kapatabilirsiniz; kaydınızın silinmesi için e-posta gönderin.</p>
+
+<h2>6. Bulut Yedek &amp; Ekip (yalnızca açarsanız)</h2>
+<p>Bu özelliği açtığınızda cihazdaki kayıtlarınız (plakalar, GPS noktaları ve rotaları, topoğrafya koordinatları, notlar ve "Adınız" alanı dahil) geliştiricinin sunucusunda saklanır ve aynı ekip kodunu giren cihazlarla paylaşılır. Hesap veya e-posta istenmez; erişim uygulamanın ürettiği ekip koduyla olur ve kodu bilen herkes kayıtları görebilir ve değiştirebilir. "Ekipten ayrıl" bu cihazın eşitlenmesini durdurur. Buluttaki kayıtların silinmesi için ekip kodunuzla birlikte e-posta gönderin.</p>
+
+<h2>7. Harita</h2>
+<p>GPS rotasını haritada açtığınızda harita görüntüleri <b>OpenStreetMap</b> sunucularından indirilir; bu sırada IP adresiniz ve görüntülenen bölge OpenStreetMap'e iletilir (<a href="https://osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org/wiki/Privacy_Policy</a>).</p>
+
+<h2>8. Abonelik (Premium)</h2>
+<p>Abonelik Google Play veya App Store üzerinden satın alınır; ödeme bilgilerinizi görmeyiz. Aboneliği doğrulamak için mağazanın verdiği satın alma kimliği sunucumuza gönderilir ve sunucu bunu Google/Apple'a sorar.</p>
+
+<h2>9. Paylaşım ve yedek</h2>
+<p>Rapor (metin, PDF, Excel), KML/GPX rota ve JSON yedek paylaşımı yalnızca sizin başlattığınız işlemlerdir; dosyanın nereye gideceğini siz seçersiniz.</p>
+
+<h2>10. Verilerinizi silme</h2>
+<p>Rapor sayfasındaki <b>Tümünü Sil</b> düğmesi veya uygulamayı kaldırmak tüm yerel verileri siler (cihaz ekipteyse önce ekipten çıkarılır; buluttaki ekip kayıtları silinmez). Sunucudaki bildirim kaydınızın, bulut kayıtlarınızın veya AI ile ilgili verilerin silinmesi için <a href="mailto:yusuftaskiran753@gmail.com">yusuftaskiran753@gmail.com</a> adresine yazın.</p>
+
+<h2>11. Çocuklar ve değişiklikler</h2>
+<p>Uygulama iş amaçlıdır ve 13 yaşın altındaki çocuklara yönelik değildir. Bu politika değişirse güncel sürüm bu sayfada yayınlanır.</p>
+
+<hr>
+
+<h1 lang="en">Privacy Policy – Asfaltik</h1>
+<div lang="en">
+<p class="small">Last updated: 18.10.2026 · Developer: Yusuf Taşkıran · Contact: <a href="mailto:yusuftaskiran753@gmail.com">yusuftaskiran753@gmail.com</a></p>
+<ul>
+<li><b>No accounts, ads or tracking.</b> Your records are stored on your device. Data leaves the device only when you use the features below.</li>
+<li><b>Location</b> is used for GPS measurement, points, topography and weather. A started GPS measurement continues in the background with a notification until you stop it. For weather, coordinates or the searched place name are sent to <b>Open-Meteo</b>. The last known location may be sent to the phone's built-in geocoder (Google/Apple) to detect the country; only the country code is stored.</li>
+<li><b>AI assistant:</b> your question, photo (if any) and a summary of your latest records are sent to the developer's server and to the AI provider (<b>Google Gemini</b>). Plates, GPS points and routes, topography coordinates and the recorder's name are not sent. The installation ID and IP address are kept in server memory for that day to count usage.</li>
+<li><b>Push notifications:</b> the server stores the Firebase Cloud Messaging token, a random installation ID, language, notification preferences and time, time zone, your name field, a hash of the team code, the last location used for weather and that day's summary numbers. Delivered via Google Firebase Cloud Messaging.</li>
+<li><b>Cloud Backup &amp; Team (opt-in):</b> all records on the device are stored on the developer's server and shared with devices that enter the same team code. Anyone with the code can see and change the records.</li>
+<li><b>Map:</b> map tiles are downloaded from <b>OpenStreetMap</b>, which receives your IP address and the viewed area.</li>
+<li><b>Subscription:</b> purchased through Google Play or the App Store; we never see payment details. The store purchase identifier is verified with Google/Apple.</li>
+<li><b>Deletion:</b> "Delete All" or uninstalling removes local data. Email <a href="mailto:yusuftaskiran753@gmail.com">yusuftaskiran753@gmail.com</a> to delete server-side data.</li>
+<li>Not directed to children under 13.</li>
+</ul>
+</div>
+
+<p class="small" style="margin-top:32px"><a href="/">← Asfaltik ana sayfa</a></p>
+</body>
+</html>

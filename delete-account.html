@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Deletion - Asfaltik</title>
+<style>
+body{font-family:Arial;max-width:700px;margin:30px auto;padding:20px;background:#f9fafb}
+.lang-btn{padding:8px 14px;margin:5px;border:none;border-radius:8px;cursor:pointer;background:#e5e7eb}
+.lang-btn.active{background:#111827;color:white}
+.card{background:white;padding:25px;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+<button class="lang-btn active" onclick="setLang('tr')">🇹🇷 Türkçe</button>
+<button class="lang-btn" onclick="setLang('en')">🇺🇸 English</button>
+<button class="lang-btn" onclick="setLang('ar')">🇸🇦 العربية</button>
+<button class="lang-btn" onclick="setLang('ru')">🇷🇺 Русский</button>
+</div>
+
+<div class="card" id="tr">
+<h1>🗑️ Hesap Silme Talebi</h1>
+<p><b>Geliştirici:</b> Yusuf Taşkıran - Sivas</p>
+<p>Hesabınızı ve tüm verilerinizi kalıcı olarak silmek için:</p>
+<p><b>1.</b> E-posta gönder: <b>asfaltikapp@gmail.com</b><br>
+<b>2.</b> Konu: <b>Hesabımı Sil - Delete My Account</b><br>
+<b>3.</b> İçerik: Kayıtlı telefon numaranız</p>
+<p>24 saat içinde GPS kayıtlarınız, kamyon bilgileriniz tamamen silinir. Bu işlem geri alınamaz.</p>
+<p><b>İptal:</b> Ayarlar > Apple ID > Abonelikler > İptal Et | Google Play > Abonelikler > İptal Et</p>
+</div>
+
+<div class="card" id="en" style="display:none">
+<h1>🗑️ Account Deletion Request</h1>
+<p><b>Developer:</b> Yusuf Taskiran - Sivas</p>
+<p>To permanently delete your account and all data:</p>
+<p><b>1.</b> Send email to: <b>asfaltikapp@gmail.com</b><br>
+<b>2.</b> Subject: <b>Delete My Account</b><br>
+<b>3.</b> Content: Your registered phone number</p>
+<p>All your GPS logs and truck data will be deleted within 24 hours. This action cannot be undone.</p>
+<p><b>Cancel Subscription:</b> Settings > Apple ID > Subscriptions > Cancel | Google Play > Subscriptions > Cancel</p>
+</div>
+
+<div class="card" id="ar" style="display:none; direction:rtl; text-align:right">
+<h1>🗑️ طلب حذف الحساب</h1>
+<p><b>المطور:</b> يوسف تاشكيران - سيواس</p>
+<p>لحذف حسابك وجميع بياناتك نهائياً:</p>
+<p><b>1.</b> أرسل بريد إلكتروني إلى: <b>asfaltikapp@gmail.com</b><br>
+<b>2.</b> الموضوع: <b>حذف حسابي</b><br>
+<b>3.</b> المحتوى: رقم هاتفك المسجل</p>
+<p>سيتم حذف جميع سجلات GPS ومعلومات الشاحنات الخاصة بك خلال 24 ساعة. لا يمكن التراجع عن هذا الإجراء.</p>
+<p><b>إلغاء الاشتراك:</b> الإعدادات > Apple ID > الاشتراكات > إلغاء | Google Play > الاشتراكات > إلغاء</p>
+</div>
+
+<div class="card" id="ru" style="display:none">
+<h1>🗑️ Запрос на удаление аккаунта</h1>
+<p><b>Разработчик:</b> Юсуф Ташкыран - Сивас</p>
+<p>Чтобы навсегда удалить ваш аккаунт и все данные:</p>
+<p><b>1.</b> Отправьте письмо на: <b>asfaltikapp@gmail.com</b><br>
+<b>2.</b> Тема: <b>Удалить мой аккаунт</b><br>
+<b>3.</b> Содержание: Ваш зарегистрированный номер телефона</p>
+<p>Все ваши GPS-логи и данные о грузовиках будут удалены в течение 24 часов. Это действие нельзя отменить.</p>
+<p><b>Отмена подписки:</b> Настройки > Apple ID > Подписки > Отменить | Google Play > Подписки > Отменить</p>
+</div>
+
+<p style="text-align:center; margin-top:20px"><a href="/index.html">← Ana Sayfa / Home</a></p>
+
+<script>
+function setLang(l){
+  ['tr','en','ar','ru'].forEach(k=>{
+    document.getElementById(k).style.display='none';
+  });
+  document.getElementById(l).style.display='block';
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
